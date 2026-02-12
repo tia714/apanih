@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+}
+
+:root{
+    --textbrown: rgb(39, 24, 6);
+    --softblue: rgb(222, 234, 255);
+    --softpink: rgb(255, 235, 240);
+    --midpink: rgb(186, 97, 122);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5)), url('2ndannivbg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 30px;
+    width: 60%;
+    margin: 10px 0px;
+}
+
+.app{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+}
+
+.containerdate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgba(167, 193, 206, 0.5);
+    width: 60%;
+    margin: 10px 0px;
+}
+
+.date{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: var(--midpink);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 1000px;
+    /*background-color: rgba(236, 208, 213, 0.6);*/
+    cursor: pointer;
+}
+
+#icon:hover{
+    /*background-color: rgba(224, 188, 195, 0.6);*/
+    transform: scale(0.9);
+}
+
+#icon:active{
+    transform: scale(0.85);
+}
+
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+}
+
+.options{
+    list-style: none;
+    margin: 15px 0px;
+}
+
+.option{
+    margin: 10px 0px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: var(--softpink);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quizheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px 15px 40px;
+    border-bottom: 2px solid black;
+}
+
+.quiztimer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.quizcontent{
+    padding: 10px 0px;
+}
+
+.quizfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+    border-top: 2px solid black;
+}
+
+.quiztimer{
+    background-color: var(--softblue);
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.option.correct{
+    background-color: rgb(154, 223, 152);
+    color: rgb(5, 52, 3);;
+}
+
+.option.wrong{
+    background-color: rgb(223, 152, 152);
+    color: rgb(81, 7, 7);;
+}
+
+.option:hover{
+    background-color: rgb(255, 213, 222);
+}
+
+#bar{
+    width: 20%;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--midpink);
+    flex: 1;  
+}
+
+#barp{
+    width: 0%;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--textbrown);
+    transition: all 0.3s ease;
+}
+
+.progress{
+    display: flex;
+    flex-direction: row;
+    flex: 0.8;
+    gap: 10px;
+}
+
+#resetquiz{
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    background-color: var(--softblue);
+}
+
+#scrpbk{
+    margin: 20px;
+}

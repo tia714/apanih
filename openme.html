@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Me</title>
+    <link rel="icon" type="image/x-icon" href="heart.svg">
+    <link rel="stylesheet" href="2ndanniv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<audio id="cuteclick" preload="auto">
+    <source src="cuteclick.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="gamestart" preload="auto">
+    <source src="gamestart.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="scorrect" preload="auto" src="correct.mp3"></audio>
+<audio id="swrong" preload="auto" src="wrong.mp3"></audio>
+<audio id="stimesup" preload="auto" src="timesup.mp3"></audio>
+
+
+<div id="Page1" class="container1">
+    <div class="app">
+        <a href="#" data-check="quizdone" data-sound data-show="Page2" data-hide="Page1">
+            <img src="flowerpink.png" style="width:250px;height:250px;">
+        </a>
+        <div id="reward" style="display:none;">
+            <a href="#" data-sound data-show="Page5" data-hide="Page1" >
+                <img src="flowerwhite.png" style="width:250px;height:250px;">
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+<div id="Page2" class="container2" style="display:none">
+        <h2>Quiz time!</h2>
+        <p>There will be 10 questions. You only have 15 seconds for each question. Good luck!</p>
+        <small>(This is not foolproof cuz' I don't have time for allat, ok...)</small><br>
+        <button href="#" dat-sound data-show="Page3" data-hide="Page2">start</button>
+</div>
+
+<div id="Page3" class="quiz" style="display:none">
+    <header class="quizheader">
+        <div class="quiztitle">
+            <h2>Quiz time!</h2>
+        </div>
+        <div class="quiztimer">
+            <p class="timesup"></p>
+            <i class="fa-regular fa-clock"></i>
+            <p class="duration">15s</p>
+        </div>
+    </header>
+
+    <div class="quizcontent">
+        <h1 class="question">Apa gitu kek</h1>
+        <ul class="options">
+            <li class="option">
+                <p>apa1</p>
+            </li>
+            <li class="option correct">
+                <p>apa2</p>
+            </li>
+            <li class="option wrong">
+                <p>apa3</p>
+            </li>
+            <li class="option">
+                <p>apa4</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="quizfooter">
+        <div class="progress">
+            <div id="bar">
+                <div id="barp">
+
+                </div>
+            </div>
+            <p class="quizstatus"><b>1</b> of <b>10</b></p>
+        </div>
+        <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+</div>
+
+<div id="Page4" class="result container2" style="display:none">
+    <p class="resultmessage">You answered <b>5</b> out of <b>10</b> questions correctly!</p>
+    <button id="goHome"><i class="fa-solid fa-house"></i></button>
+</div>
+
+<div id="Page5" class="container2" style="display:none">
+    <div class="container">
+        <h2>A letter for you</h2>
+        <p>Hey! Soo I actually made this for our anniversary, but you know I have way too many shit to do. So, I'm just gonna give you this for valentine. Honestly, I don't really know what to say... I'm really glad I knew you since long time ago. I'm thankful that you have been my bf for 2 years now. Wow, we can do this even though kita ldr. Soo yeah.... That's it, byee</p>
+        <img id="scrpbk" src="vlntine2.png" style="width:500px;height:400px;"><br>
+        <button id="goHome1"><i class="fa-solid fa-house"></i></button>
+    </div>
+</div>
+
+<script src="2ndanniv.js"></script>
+</body>
+
+</html>
