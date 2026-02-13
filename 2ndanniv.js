@@ -69,7 +69,7 @@ let score = 0;
 const status = document.querySelector(".next");
 const timerdisplay = document.querySelector(".duration");
 const timesup = document.querySelector(".timesup");
-const quiztimer = 5;
+const quiztimer = 15;
 let currenttime = quiztimer;
 let timer = null;
 let shuffledQuestions = [];
@@ -267,6 +267,7 @@ document.getElementById("goHome1").addEventListener("click", () => {
     document.getElementById("Page5").style.display = "none";
     document.getElementById("Page1").style.display = "block";
 });
+
 
 
 
